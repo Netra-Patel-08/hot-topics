@@ -1,0 +1,345 @@
+/* 
+        Analogous Color Scheme:
+        Primary: #2C5F5D (Teal Blue-Green)
+        Secondary: #3D7B7A (Medium Teal)
+        Accent: #4E9A97 (Light Teal)
+        Support: #1F4544 (Dark Teal)
+        Light: #E8F4F3 (Very Light Teal)
+        */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Source Sans Pro', sans-serif;
+            line-height: 1.5;
+            color: #333;
+            background-color: #fff;
+        }
+        
+        /* Typography */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+        }
+        
+        /* Mobile First - Base styles */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        
+        /* Header */
+        header {
+            background-color: #fff;
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(44, 95, 93, 0.1);
+        }
+        
+        .header-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #2C5F5D;
+            margin-bottom: 1rem;
+            text-decoration: none;
+        }
+        
+        .logo i {
+            margin-right: 0.5rem;
+        }
+        
+        /* Navigation */
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #2C5F5D;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            background-color: #E8F4F3;
+            font-weight: 500;
+        }
+        
+        nav a:hover,
+        nav a.active {
+            background-color: #2C5F5D;
+            color: #fff;
+        }
+        
+        /* Masthead */
+        .masthead {
+            background: linear-gradient(135deg, rgba(44, 95, 93, 0.8), rgba(61, 123, 122, 0.8)), 
+                        url(../img/banner.jpg);
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            padding: 4rem 0;
+        }
+        
+        .masthead h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .tagline {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+        
+        /* Main Content */
+        main {
+            padding: 2rem 0;
+            min-height: 400px;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 2rem;
+            color: #3D7B7A;
+        }
+        
+        /* Article Styles */
+        article {
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #E8F4F3;
+        }
+        
+        article:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+        
+        article h2 {
+            font-size: 1.5rem;
+            color: #2C5F5D;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        
+        figure {
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        
+        figure img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        figcaption {
+            margin-top: 0.5rem;
+            font-style: italic;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        article p {
+            margin-bottom: 1rem;
+            text-align: left;
+            font-size: 0.75rem;
+        }
+        
+        /* Portfolio Styles */
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .portfolio-card {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(44, 95, 93, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .portfolio-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(44, 95, 93, 0.2);
+        }
+        
+        .portfolio-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .portfolio-card h3 {
+            padding: 1rem;
+            text-align: center;
+            color: #2C5F5D;
+            font-size: 1rem;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #2C5F5D;
+            color: #fff;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+        
+        .social-links a {
+            color: #E8F4F3;
+            font-size: 1.2rem;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            color: #4E9A97;
+            transform: scale(1.1);
+        }
+        
+        .company-info h4 {
+            margin-bottom: 0.5rem;
+            color: #E8F4F3;
+        }
+        
+        .company-info p {
+            margin-bottom: 0.25rem;
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        
+        .copyright {
+            padding-top: 1rem;
+            border-top: 1px solid #3D7B7A;
+            font-size: 0.8rem;
+            opacity: 0.8;
+        }
+        
+        /* Tablet View */
+        @media (min-width: 35rem) {
+            body {
+                font-size: 1rem;
+            }
+            
+            article p {
+                font-size: 1rem;
+            }
+            
+            .header-content {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+            
+            .logo {
+                margin-bottom: 0;
+            }
+            
+            nav ul {
+                flex-direction: row;
+            }
+            
+            .masthead h1 {
+                font-size: 2.5rem;
+            }
+            
+            .tagline {
+                font-size: 1.2rem;
+            }
+            
+            /* Image and text side by side */
+            .article-content {
+                display: flex;
+                gap: 1.5rem;
+                align-items: flex-start;
+            }
+            
+            .article-image {
+                flex: 0 0 40%;
+            }
+            
+            .article-text {
+                flex: 1;
+            }
+            
+            .portfolio-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .footer-content {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+        
+        /* Desktop View */
+        @media (min-width: 80rem) {
+            body {
+                font-size: 1.25rem;
+            }
+            
+            article p {
+                font-size: 1.25rem;
+            }
+            
+            .container {
+                text-align: left;
+            }
+            
+            .masthead {
+                text-align: left;
+            }
+            
+            .masthead .container {
+                text-align: left;
+            }
+            
+            .masthead h1 {
+                font-size: 3rem;
+            }
+            
+            .tagline {
+                font-size: 1.4rem;
+            }
+            
+            article h2 {
+                text-align: left;
+                font-size: 2rem;
+            }
+            
+            .portfolio-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
